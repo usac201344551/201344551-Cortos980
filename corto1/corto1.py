@@ -10,15 +10,15 @@ savecollatz=[]
 for i in range(2,6):
     del savecollatz[:]
     while i != 1:
-        savecollatz.append(int(i))
+        savecollatz.append(int(i))#Esta de mas
         if i % 2 == 0:
             print("%d," % (i), end = "")
             i = i / 2
-            savecollatz.append(int(i))
+            savecollatz.append(int(i))#Esta de mas
         else:
             print("%d," % (i), end = "")
             i = (i * 3) + 1
-            savecollatz.append(int(i))
+            savecollatz.append(int(i))#Esta de mas
         if i == 1:
             print("1")
         savecollatz.append(int(i))
@@ -36,4 +36,12 @@ def fileAppend(fileName = 'collatz.txt'):
     archivo.close() #Siempre cerrar el archivo al finalizar la escritura
     print('\n\nAppend finalizado')
 '''
+
+#Funcionamiento:        15/40 No se guarda correctamente la secuencia en la lista, No guarda en archivo de texto, solamente genera una secuencia y no N secuencias
+#Uso de Funciones       0/20
+#Manejo de archivos     0/10
+#Manejo de Listas       10/10
+#Uso de git             20/20
+#*****************************
+#Total                  45/100
 
